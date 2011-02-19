@@ -1,0 +1,4 @@
+usr/share/ibus/component/sunpinyin.xml
+usr/share/locale/zh_CN/LC_MESSAGES/ibus-sunpinyin.mo
+usr/share/ibus-sunpinyin/*
+usr/lib/ibus-sunpinyin/*

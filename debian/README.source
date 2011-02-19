@@ -1,0 +1,11 @@
+ibus-sunpinyin for Debian
+-------------------------
+
+The source package is generated from git repository on commit 
+dae49d1c153b37b1b90eb3d4ffb4067fe6a6661b on Aug 18 2010 with command:
+
+git archive --format=tar --prefix=ibus-sunpinyin-2.0.2/ \
+dae49d1c153b37b1b90eb3d4ffb4067fe6a6661b COPYING LGPL.LICENSE \
+OPENSOLARIS.LICENSE README wrapper/ibus |bzip2 -9\
+>../ibus-sunpinyin-2.0.2.tar.bz2
+

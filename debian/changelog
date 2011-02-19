@@ -1,0 +1,14 @@
+ibus-sunpinyin (2.0.3-1) unstable; urgency=low
+
+  * New upstream release 2.0.3.
+  * Upload to unstable.
+  * Update VCS field in debian/control.
+  * Remove README.source, it's no meaning now.
+
+ -- Liang Guo <bluestonechina@gmail.com>  Sat, 19 Feb 2011 16:35:54 +0800
+
+ibus-sunpinyin (2.0.2-1) experimental; urgency=low
+
+  * Initial release (Closes: #587839)
+
+ -- Liang Guo <bluestonechina@gmail.com>  Thu, 19 Aug 2010 22:47:06 +0800
