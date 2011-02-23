@@ -1,6 +1,4 @@
-When LDFLAGS, CXXFLAGS and others is defined in system environment, the value defined
-in system environment should be appended to env, rather than replace.
-
+force some flags always on in linkflags
 --- a/SConstruct
 +++ b/SConstruct
 @@ -14,7 +14,7 @@
@@ -12,12 +10,23 @@ in system environment should be appended to env, rather than replace.
  version = '2.0.3'
  
  AddOption('--prefix', dest='prefix', metavar='DIR',
-@@ -38,7 +38,7 @@
-     for (x, y) in envvar:
-         if x in os.environ:
-             print 'Warning: you\'ve set %s in the environmental variable!' % x
--            env[y] = os.environ[x]
-+            env[y] += os.environ[x]
+@@ -62,9 +62,6 @@
  
- env = Environment(ENV=os.environ,
-                   CFLAGS=cflags, CXXFLAGS=cflags, 
+ opts.Save('configure.conf', env)
+ 
+-if GetOption('rpath') is not None:
+-    env.Append(LINKFLAGS='-Wl,-R -Wl,%s' % GetOption('rpath'))
+-
+ envvar = [('CC', 'CC'),
+           ('CXX', 'CXX'),
+           ('CFLAGS', 'CFLAGS'),
+@@ -85,6 +82,9 @@
+ env.Append(CFLAGS=extra_cflags)
+ env.Append(CXXFLAGS=extra_cflags)
+ 
++if GetOption('rpath') is not None:
++    env.Append(LINKFLAGS=['-Wl,-R', '-Wl,%s' % GetOption('rpath')])
++
+ #
+ #==============================configure================================
+ #
