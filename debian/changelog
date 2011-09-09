@@ -1,3 +1,9 @@
+ibus-sunpinyin (2.0.3-2) unstable; urgency=low
+
+  * Add libibus-1.0-dev to build-depends, Remove libibus-dev
+
+ -- Liang Guo <bluestonechina@gmail.com>  Fri, 09 Sep 2011 13:59:54 +0800
+
 ibus-sunpinyin (2.0.3-1) unstable; urgency=low
 
   * New upstream release 2.0.3.
