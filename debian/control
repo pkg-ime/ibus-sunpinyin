@@ -6,8 +6,8 @@ Uploaders: Liang Guo <bluestonechina@gmail.com>
 Build-Depends: debhelper (>= 7.0.50~), scons, pkg-config, libibus-1.0-dev, libsunpinyin-dev
 Standards-Version: 3.9.2
 Homepage: http://code.google.com/p/sunpinyin
-Vcs-Git: git://git.debian.org/git/collab-maint/ibus-sunpinyin
-Vcs-Browser: http://git.debian.org/?p=collab-maint/ibus-sunpinyin.git
+Vcs-Git: git://git.debian.org/git/pkg-ime/ibus-sunpinyin
+Vcs-Browser: http://git.debian.org/?p=pkg-ime/ibus-sunpinyin.git
 
 Package: ibus-sunpinyin
 Architecture: any
